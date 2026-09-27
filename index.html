@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Regina's Bakery</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">Regina's Bakery 🎀</div>
+
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#postres">Postres</a>
+            <a href="#nosotros">Nosotros</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </nav>
+</header>
+
+
+<main>
+
+<section id="inicio" class="hero">
+
+    <p class="decoracion">🎀</p>
+
+    <h1>Regina's Bakery</h1>
+
+    <h2>Postres hechos con amor</h2>
+
+    <p>
+        Un pequeño rincón lleno de dulzura,
+        creado para hacer tus momentos más especiales.
+    </p>
+
+    <div class="botones">
+        <a href="#postres" class="boton">Ver nuestros postres</a>
+        <a href="#contacto" class="boton secundario">Hacer un pedido</a>
+    </div>
+
+</section>
+
+
+<section id="postres" class="seccion">
+
+    <p class="subtitulo">NUESTROS FAVORITOS</p>
+
+    <h2>Postres para consentirte 🎀</h2>
+
+    <p class="instruccion">
+        ✨ Haz clic en un postre para conocerlo mejor.
+    </p>
+
+    <div class="productos">
+
+
+        <!-- ROLES -->
+        <div class="producto" onclick="abrirPostre(
+            'Roles de canela 🍥',
+            'Suaves y esponjosos roles de canela, recién horneados y preparados con una mezcla dulce de canela. Perfectos para acompañar tu café o para darte un pequeño gusto durante el día.',
+            '$25 c/u'
+        )">
+
+            <div class="foto">🍥</div>
+
+            <h3>Roles de canela</h3>
+
+            <p>Suaves, dulces y recién horneados.</p>
+
+            <span class="precio">$25 c/u</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- RED VELVET -->
+        <div class="producto" onclick="abrirPostre(
+            'Red Velvet 🍰',
+            'Pastel suave de red velvet con su característico sabor ligeramente chocolatoso y un delicioso betún cremoso. Una opción perfecta para celebraciones o para consentirte.',
+            '$395'
+        )">
+
+            <div class="foto">🍰</div>
+
+            <h3>Red Velvet</h3>
+
+            <p>Un clásico suave y delicioso.</p>
+
+            <span class="precio">$395</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- ZANAHORIA -->
+        <div class="producto" onclick="abrirPostre(
+            'Pastel de zanahoria 🥕',
+            'Pastel casero de zanahoria, suave y lleno de sabor. Preparado con ingredientes que combinan perfectamente para lograr un postre delicioso y reconfortante.',
+            '$350'
+        )">
+
+            <div class="foto">🥕</div>
+
+            <h3>Pastel de Zanahoria</h3>
+
+            <p>Casero, suave y lleno de sabor.</p>
+
+            <span class="precio">$350</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- GALLETAS -->
+        <div class="producto" onclick="abrirPostre(
+            'Galletas con chocolate 🍪',
+            'Galletas horneadas con chispas de chocolate. Son suaves por dentro, ligeramente crujientes por fuera y perfectas para acompañar con leche, café o tu bebida favorita.',
+            '$20 c/u'
+        )">
+
+            <div class="foto">🍪</div>
+
+            <h3>Galletas</h3>
+
+            <p>Con chispas de chocolate.</p>
+
+            <span class="precio">$20 c/u</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- BROWNIES -->
+        <div class="producto" onclick="abrirPostre(
+            'Brownies 🍫',
+            'Brownies de chocolate con una textura suave y deliciosa. Ideales para los amantes del chocolate y para disfrutar como un pequeño antojo durante el día.',
+            '$25'
+        )">
+
+            <div class="foto">🍫</div>
+
+            <h3>Brownies</h3>
+
+            <p>Chocolate en cada mordida.</p>
+
+            <span class="precio">$25</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- OREJITAS -->
+        <div class="producto" onclick="abrirPostre(
+            'Orejitas 🥐',
+            'Deliciosas orejitas crujientes, horneadas hasta conseguir una textura ligera y doradita. Un clásico sencillo que combina perfecto con café.',
+            '$50'
+        )">
+
+            <div class="foto">🥐</div>
+
+            <h3>Orejitas</h3>
+
+            <p>Crujientes y deliciosas.</p>
+
+            <span class="precio">$50</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- CHEESECAKE -->
+        <div class="producto" onclick="abrirPostre(
+            'Cheesecake 🍓',
+            'Cheesecake cremoso con una textura suave y una base deliciosa. Puedes disfrutarlo como postre después de una comida o como un antojo especial.',
+            '$380'
+        )">
+
+            <div class="foto">🍓</div>
+
+            <h3>Cheesecake</h3>
+
+            <p>Cremoso, suave y delicioso.</p>
+
+            <span class="precio">$380</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- CUPCAKES -->
+        <div class="producto" onclick="abrirPostre(
+            'Cupcakes 🧁',
+            'Pequeños pastelitos suaves y esponjosos, decorados de manera bonita y preparados para cualquier ocasión. Ideales para compartir o regalar.',
+            '$35 c/u'
+        )">
+
+            <div class="foto">🧁</div>
+
+            <h3>Cupcakes</h3>
+
+            <p>Bonitos, suaves y deliciosos.</p>
+
+            <span class="precio">$35 c/u</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+<!-- TIRAMISÚ -->
+<div class="producto" onclick="abrirPostre(
+    'Tiramisú ☕',
+    'Delicioso tiramisú con capas suaves y cremosas, combinado con el sabor del café y un toque de cacao. Un postre clásico, elegante y perfecto para los amantes del café.',
+    '$650'
+)">
+    <div class="foto">☕</div>
+    <h3>Tiramisú</h3>
+    <p>Cremoso, suave y con un toque de café.</p>
+    <span class="precio">$650</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+
+<!-- PAVLOVA -->
+<div class="producto" onclick="abrirPostre(
+    'Pavlova 🍓',
+    'Postre ligero y delicado elaborado con una base de merengue crujiente por fuera y suave por dentro, acompañado de una textura cremosa y fruta fresca.',
+    '$420'
+)">
+    <div class="foto">🍓</div>
+    <h3>Pavlova</h3>
+    <p>Ligera, crujiente y deliciosa.</p>
+    <span class="precio">$420</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+
+<!-- MOSTACHÓN -->
+<div class="producto" onclick="abrirPostre(
+    'Mostachón de fresa 🍓',
+    'Delicioso mostachón preparado con una base crujiente y dulce, acompañado de una textura cremosa y fresas que le dan un toque fresco y especial.',
+    '$370'
+)">
+    <div class="foto">🍓</div>
+    <h3>Mostachón de fresa</h3>
+    <p>Dulce, cremoso y con fresas.</p>
+    <span class="precio">$370</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+
+<!-- PANQUÉ DE PLÁTANO -->
+<div class="producto" onclick="abrirPostre(
+    'Panqué de plátano con chocolate 🍌',
+    'Panqué casero de plátano, suave y esponjoso, combinado con deliciosos trozos de chocolate. Una opción perfecta para acompañar con café o disfrutar como un antojo.',
+    '$295'
+)">
+    <div class="foto">🍌</div>
+    <h3>Panqué de plátano con chocolate</h3>
+    <p>Suave, casero y con chocolate.</p>
+    <span class="precio">$295</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+
+<!-- BIZCOCHO DE LIMÓN -->
+<div class="producto" onclick="abrirPostre(
+    'Bizcocho de limón 🍋',
+    'Bizcocho suave y esponjoso con un delicioso sabor a limón. Su toque fresco lo convierte en una opción ligera y perfecta para acompañar una bebida caliente.',
+    '$320'
+)">
+    <div class="foto">🍋</div>
+    <h3>Bizcocho de limón</h3>
+    <p>Suave, esponjoso y con sabor a limón.</p>
+    <span class="precio">$320</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+
+<!-- PANQUÉ DE ELOTE -->
+<div class="producto" onclick="abrirPostre(
+    'Panqué de elote 🌽',
+    'Panqué casero de elote con una textura suave y húmeda y un delicioso sabor tradicional. Perfecto para disfrutar en cualquier momento del día.',
+    '$220'
+)">
+    <div class="foto">🌽</div>
+    <h3>Panqué de elote</h3>
+    <p>Suave, casero y con sabor tradicional.</p>
+    <span class="precio">$220</span>
+
+    <a href="https://wa.me/522211533932"
+       class="pedido"
+       target="_blank"
+       onclick="event.stopPropagation()">
+        Pedir
+    </a>
+</div>
+
+        <!-- TEMPORADA 1 -->
+        <div class="producto especial"
+             onclick="abrirPostre(
+                'Rosca de Reyes 👑',
+                'Rosca de Reyes tradicional, preparada especialmente durante la temporada de Día de Reyes. Una opción perfecta para compartir en familia.',
+                'Precio por temporada'
+             )">
+
+            <span class="etiqueta">✨ EDICIÓN LIMITADA</span>
+
+            <div class="foto">👑</div>
+
+            <h3>Rosca de Reyes</h3>
+
+            <p>Especial de temporada.</p>
+
+            <span class="precio">Disponible en temporada</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+
+        <!-- TEMPORADA 2 -->
+        <div class="producto especial"
+             onclick="abrirPostre(
+                'Hojaldras 🍞',
+                'Hojaldras tradicionales disponibles durante la temporada correspondiente. Su sabor y textura las convierten en uno de nuestros especiales por tiempo limitado.',
+                'Precio por temporada'
+             )">
+
+            <span class="etiqueta">✨ EDICIÓN LIMITADA</span>
+
+            <div class="foto">🍞</div>
+
+            <h3>Hojaldras</h3>
+
+            <p>Especial de temporada.</p>
+
+            <span class="precio">Disponible en temporada</span>
+
+            <a href="https://wa.me/522211533932"
+               class="pedido"
+               target="_blank"
+               onclick="event.stopPropagation()">
+                Pedir
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- VENTANA DE DESCRIPCIÓN -->
+
+<div id="modalPostre" class="modal">
+
+    <div class="modal-contenido">
+
+        <button class="cerrar" onclick="cerrarPostre()">×</button>
+
+        <div id="modalFoto" class="modal-foto">🍰</div>
+
+        <h2 id="modalTitulo"></h2>
+
+        <p id="modalDescripcion"></p>
+
+        <span id="modalPrecio" class="modal-precio"></span>
+
+        <br><br>
+
+        <a href="https://wa.me/522211533932"
+           class="boton"
+           target="_blank">
+            Pedir este postre 💬
+        </a>
+
+    </div>
+
+</div>
+
+
+<section class="galeria">
+
+    <p class="subtitulo">NUESTROS POSTRES</p>
+
+    <h2>Un poquito de dulzura 🎀</h2>
+
+    <div class="galeria-grid">
+
+        <div class="galeria-foto">📸</div>
+        <div class="galeria-foto">📸</div>
+        <div class="galeria-foto">📸</div>
+
+    </div>
+
+</section>
+
+
+<section id="nosotros" class="seccion nosotros">
+
+    <p class="subtitulo">SOBRE NOSOTROS</p>
+
+    <h2>Un poquito de dulzura 🩷</h2>
+
+    <p>
+        Regina's Bakery nace del gusto por crear postres
+        que hagan más especiales los pequeños momentos.
+        Cada producto está preparado con cariño y atención
+        a cada detalle.
+    </p>
+
+</section>
+
+
+<section class="temporada">
+
+    <p class="subtitulo">POR TEMPORADA</p>
+
+    <h2>Especiales de temporada 🎄</h2>
+
+    <p>
+        Algunos postres estarán disponibles únicamente
+        durante ciertas épocas del año.
+    </p>
+
+    <p>
+        ✨ Búscalos en nuestro menú con la etiqueta
+        <strong>EDICIÓN LIMITADA</strong>.
+    </p>
+
+</section>
+
+
+<section id="contacto" class="contacto">
+
+    <p class="subtitulo">¿SE TE ANTOJÓ ALGO?</p>
+
+    <h2>Haz tu pedido 🎀</h2>
+
+    <p>
+        Elige tu postre favorito y contáctame para hacer tu pedido.
+    </p>
+
+    <a href="https://wa.me/522211533932"
+       class="boton"
+       target="_blank">
+        Hacer un pedido
+    </a>
+
+    <a href="https://www.instagram.com/regina.sbakery/"
+       class="boton secundario"
+       target="_blank">
+        Instagram
+    </a>
+
+</section>
+
+</main>
+
+
+<footer>
+
+    <p>♡ Regina's Bakery ♡</p>
+
+    <p>Postres hechos con amor 🎀</p>
+
+</footer>
+
+
+<script>
+
+function abrirPostre(titulo, descripcion, precio) {
+
+    document.getElementById("modalTitulo").textContent = titulo;
+
+    document.getElementById("modalDescripcion").textContent = descripcion;
+
+    document.getElementById("modalPrecio").textContent = precio;
+
+    document.getElementById("modalPostre").classList.add("activo");
+}
+
+
+function cerrarPostre() {
+
+    document.getElementById("modalPostre").classList.remove("activo");
+
+}
+
+
+window.onclick = function(event) {
+
+    const modal = document.getElementById("modalPostre");
+
+    if (event.target === modal) {
+
+        cerrarPostre();
+
+    }
+
+}
+
+</script>
+
+
+</body>
+
+</html>
